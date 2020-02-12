@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+nav, section, article {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  left: 30px;
+  height: 100%;
+  width: 360px;
+  overflow: auto;
+  border-right: 5px solid green;
+}
+
+nav header {
+  position: relative;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-decoration: underline;
+  left: 15px;
+  padding: 30px 0;
+}
+
+.nav-link {
+  display: inline-block;
+  color: black;
+  outline: none;
+  text-decoration: none;
+  width: 100%;
+  font-size: 1.4em;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  background-color: green;
+  color: white;
+}
+
+#navbar li:last-child {
+  margin-bottom: 50px;
+}
+
+.nav-link-subitem {
+  position: relative;
+  left: 15px;
+  display: inline-block;
+  color: black;
+  outline: none;
+  text-decoration: none;
+  width: 100%;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.nav-link-subitem:hover {
+  background-color: green;
+  color: white;
+}
+
+main {
+  margin-top: 70px;
+  margin-left: 450px;
+  width: 50%;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+section {
+  margin: 50px 0 20px 0;
+  padding: 5px;
+}
+
+article {
+  margin: 50px 0 15px 0;
+}
+
+h2, h3 {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  margin: 20px 0;
+  font-family: 'Open Sans', sans-serif;
+  word-spacing: 0.35em;
+}
+
+dl {
+  font-family: 'Open Sans', sans-serif;
+  word-spacing: 0.35em;
+}
+
+dt {
+  margin: 10px 0;
+}
+
+li {
+  margin: 10px 0 10px 30px;
+  font-family: 'Open Sans', sans-serif;
+  word-spacing: 0.35em;
+  line-height: 1.65em;
+  list-style: none;
+}
+
+pre {
+  background-color: #272822;
+  color: white;
+  overflow: auto;
+}
+
+code {
+  background-color: #272822;
+  color: white;
+}
+
+.keyword {
+  color: #67d8ef;
+}
+
+.string {
+  color: #e7db60;
+}
+
+.comment {
+  color: #74705d;
+}
+
+.function {
+  color: #98e228;
+}
+
+.parameter {
+  color: #e79622;
+}
+
+.operator {
+  color: #f92472;
+}
+
+.conditional_statement {
+  color: #f92472; 
+}
+
+.boolean {
+  color: #ac80ff;
+}
+
+.number {
+  color: #ac80ff; 
+}
+
+.constant {
+  color: #67d8ef;
+}
+
+kbd {
+  background-color: #f0f0f0;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+hr {
+  border: 0;
+  height: 15px;
+  background: linear-gradient(to left, white, green, white);
+}
+
+@media only screen and (max-width: 1300px) {
+  pre code {
+    background-color: transparent;
+    position: relative;
+    left: -100px;
+  }
+  
+  nav {
+    left: 10px;
+  }
+  
+  main {
+    margin-left: 400px;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-height: 440px) {
+  nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 220px;
+    width: 100%;
+    overflow: auto;
+    border-bottom: 3px solid green;
+    border-right: none;
+  }
+  
+  nav header {
+    left: 0;
+    font-size: 1.3em;
+    padding: 5px 0;
+  }
+  
+  .nav-link {
+    font-size: 1.1em;
+  }
+  
+  .nav-link-subitem {
+    font-size: 0.9em;
+    left: 0;
+  }
+  
+  .nav-link-subitem::before {
+    content: "-\00A0";
+  }
+  
+  li {
+    margin: 5px 0 5px 0;
+    line-height: 1.4em;
+  }
+  
+  li a::after {
+    content: "\003C";
+    color: green;
+    padding-left: 2px;
+  }
+  
+  main {
+    margin-left: 0;
+    margin-top: 240px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-height: 440px) {
+  main {
+    margin-left: 280px;
+    width: auto;
+    font-size: 1.1em;
+    margin-top: 0;
+  }
+  
+  section {
+    margin: 25px 0 10px 0;
+  }
+  
+  header h2 {
+    font-size: 1.3em;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0px;
+    left: 10px;
+    height: 100%;
+    width: 260px;
+    overflow: auto;
+    border-right: 5px solid green;
+  }
+  
+  nav header {
+    position: relative;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: underline;
+    left: 0;
+    padding: 5px 0;
+  }
+  
+  .nav-link {
+    font-size: 1.1em;
+  }
+  
+  .nav-link-subitem {
+    font-size: 0.9em;
+    left: 0;
+  }
+  
+  .nav-link-subitem::before {
+    content: "-\00A0";
+  }
+  
+  li {
+    margin: 5px 0 5px 0;
+    line-height: 1.4em;
+  }
+}
